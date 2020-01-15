@@ -16,7 +16,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 # Test class
-class TestsDifferentInterfaceLanguages(object):
+class TestsCorrectAddToCartButtonName(object):
     def test_correct_add_to_cart_button_name(self, browser, request) -> None:
         try:
             # ARRANGE
