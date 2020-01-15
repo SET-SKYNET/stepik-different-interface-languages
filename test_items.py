@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as ec
 
 # Test class
 class TestsDifferentInterfaceLanguages(object):
-    def test_different_interface_languages(self, browser, request) -> None:
+    def test_correct_add_to_cart_button_name(self, browser, request) -> None:
         try:
             # ARRANGE
             # Variables
@@ -48,6 +48,10 @@ class TestsDifferentInterfaceLanguages(object):
             # ACT
             # Opening link in browser
             browser.get(link)
+
+            # FOR STEPIK PRESENTATION ON GITHUB ONLY!
+            # FOR REAL TESTs, IT's NOT A GOOD PRACTICE TO USE SLEEPs!
+            # time.sleep(30)
             
             # ASSERT
             # Actual and expected variables
@@ -56,9 +60,10 @@ class TestsDifferentInterfaceLanguages(object):
             expectedAnswer = languages[user_language]
 
         finally:
+            
             # FOR STEPIK PRESENTATION ON GITHUB ONLY!
             # FOR REAL TESTs, IT's NOT A GOOD PRACTICE TO USE SLEEPs!
-            time.sleep(30)
+            time.sleep(3)
 
             # Show the result in terminal (e.g. for debug mode)
             print(f"\n\tFor [ {user_language} ] correct button name is [ {languages[user_language]} ]\n")
